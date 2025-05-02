@@ -6,6 +6,7 @@ import Today from './components/journey/today/Today'
 import Show from './components/journey/show/Show'
 import Change from './components/journey/change/Change'
 import Action from './components/journey/action/Action'
+import About from './components/about/About'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')!).render(
     <Show />
     <Change />
     <Action />
+    <About />
   </StrictMode>,
 )
