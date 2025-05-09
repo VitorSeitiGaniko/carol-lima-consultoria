@@ -1,11 +1,10 @@
-import React from 'react'
 import CarolLima from '../../assets/CarolLima.png';
 import IconAspas from '../../assets/IconAspas.svg';
 
 const About = () => {
   return (
-    <div className='bg-[#5B7A99] w-screen h-screen grid grid-cols-2 text-white'>
-        <div className='col-span-1 w-[70%] m-auto'>
+    <div className='sm:grid sm:grid-cols-2 xl:h-screen xl:p-0 bg-[#5B7A99] w-screen text-white flex flex-col-reverse items-center justify-center px-8 py-12'>
+        <div className='sm:col-span-1 sm:w-[70%] sm:m-auto mx-auto mt-12'>
             <section>
                 <span className='text-center block m-auto'>PRAZER,</span>
                 <h2 className='font-[Classy_Vogue] text-center text-4xl mt-4'>CAROL LIMA</h2>
@@ -18,15 +17,15 @@ const About = () => {
             </section>
         </div>
         
-        <div className='col-span-1 m-auto'>
-            <section className='flex flex-col items-center justify-center relative w-[80%]'>
-                <img src={CarolLima} className=''/>
-                <p className='text-end italic  mt-11'>
+        <div className='sm:col-span-1 m-auto'>
+            <section className='sm:w-[80%] sm:m-0 m-auto flex flex-col items-center justify-center relative'>
+                <img src={CarolLima} className='sm:w-[100%] md:w-[100%] lg:w-[80%] w-[80%]'/>
+                <p className='text-end italic mt-11 z-10'>
                     <span className='block'>Os dados do seu negócio já falam.</span>
                     <span className='block'>Você só precisa saber ouvir.</span>
                 </p>
                 <i className=''>
-                    <img src={IconAspas} className='absolute w-[136px] bottom-[-3%] left-[0%]'/>
+                    <img src={IconAspas} className='absolute sm:w-[124px] w-[76px] sm:bottom-[-3%] bottom-[-1%] sm:left-[0%] left-[0%]'/>
                 </i>
             </section>
         </div>

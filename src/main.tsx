@@ -7,6 +7,8 @@ import Show from './components/journey/show/Show'
 import Change from './components/journey/change/Change'
 import Action from './components/journey/action/Action'
 import About from './components/about/About'
+import Service from './components/service/Service'
+import Footer from './components/Footer/Footer'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,5 +18,7 @@ createRoot(document.getElementById('root')!).render(
     <Change />
     <Action />
     <About />
+    <Service />
+    <Footer />
   </StrictMode>,
 )

@@ -1,40 +1,39 @@
-import React from 'react'
 import Icone from '../../../assets/iconNegative.svg';
 import IconeWarning from '../../../assets/iconWarning.svg';
 
 const Today = () => {
   return (
-    <div className='bg-[#813F1D] w-screen h-screen flex flex-col items-center justify-center text-white'>
+    <div className='xl:p-0 bg-[#813F1D] w-screen xl:h-screen flex flex-col items-center justify-center text-white px-8 py-12'>
       <h2 className='flex flex-col items-center'>
         <span className='font-[Classy_Vogue] text-4xl'>HOJE É</span>
-        <span className='text-3xl'>PROVÁVEL QUE VOCÊ...</span>
+        <span className='text-xl'>PROVÁVEL QUE VOCÊ...</span>
       </h2>
 
-      <hr className='border-t border-white w-[30%] my-4' />
+      <hr className='sm:w-[30%] border-t border-white my-4' />
 
-      <section className='flex flex-col gap-6 justify-center w-[44%] mt-8'>
-        <div className='flex gap-3'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] flex flex-col gap-6 justify-center mt-8'>
+        <div className='grid grid-cols-[36px_1fr] gap-3'>
           <i>
             <img src={Icone} className='h-[24px] w-[24px]'/>
           </i>
           <span>Já vende, mas não sabe exatamente onde está perdendo dinheiro</span>
         </div>
 
-        <div className='flex gap-3'>
+        <div className='grid grid-cols-[36px_1fr] gap-3'>
           <i>
             <img src={Icone} className='h-[24px] w-[24px]'/>
           </i>
           <span>Não entende como as pessoas navegam, onde abandonam o carrinho ou quais conteúdos realmente engajam</span>
         </div>
 
-        <div className='flex gap-3'>
+        <div className='grid grid-cols-[36px_1fr] gap-3'>
           <i>
             <img src={Icone} className='h-[24px] w-[24px]'/>
           </i>
           <span>Sente que  seus anúncios não atingem as pessoas certas</span>
         </div>
 
-        <div className='flex gap-3'>
+        <div className='grid grid-cols-[36px_1fr] gap-3'>
           <i>
             <img src={Icone} className='h-[24px] w-[24px]'/>
           </i>
@@ -42,7 +41,7 @@ const Today = () => {
         </div>
       </section>
 
-      <section className='grid grid-cols-[52px_1fr] border border-white rounded-xl w-[44%] py-8 px-4 mt-14'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] grid grid-cols-[52px_1fr] border border-white rounded-xl py-8 px-4 mt-14'>
         <i className='flex items-center'>
           <img src={IconeWarning} className='h-[34px] w-[38px]'/>
         </i>

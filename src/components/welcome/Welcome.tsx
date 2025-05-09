@@ -1,19 +1,23 @@
 import React from 'react'
 import Icone from '../../assets/JL.svg';
+import Form from '../form/Form';
 
 function Welcome() {
+  const [showForm, setShowForm] = React.useState(false);
+  const URL = 'https://wa.me/5511993905235?text=Ol%C3%A1!%20Quero%20aumentar%20minhas%20convers%C3%B5es!'
+
   return (
-    <div className='bg-[#000000] w-screen h-screen flex flex-col items-center justify-center text-white grid grid-cols-5'>
-      <div className='col-span-3 flex flex-col justify-items-center items-end'>
-        <section className='flex justify-items-center items-center gap-2 w-[70%] '>
+    <div className='sm:grid sm:grid-cols-5 sm:p-0 bg-[#000000] w-screen sm:h-screen flex flex-col items-center justify-center text-white px-8 py-12'>
+      <div className='sm:col-span-3 flex flex-col justify-center items-end'>
+        <section className='sm:w-[70%] sm:justify-start flex justify-center items-center gap-2'>
           <i>
             <img src={Icone} className='h-[95px] w-[75px]'/>
           </i>
-          <h1 className='w-[33%] font-[Classy_Vogue] text-4xl leading-[46px] pl-2 border-l-white border-l-1'>Jornada do Lucro</h1>
+          <h1 className='w-[50%] font-[Classy_Vogue] text-4xl leading-[46px] pl-2 border-l-white border-l-1'>Jornada do Lucro</h1>
         </section>
 
-        <section className='w-[70%] mt-9'>
-          <p className='text-4xl'>
+        <section className='sm:w-[70%] mt-9'>
+          <p className='sm:text-left text-center text-4xl'>
             <span className='font-bold'>aumente </span>
             <span>suas </span> 
             <span className='font-bold'>conversões </span>
@@ -25,20 +29,24 @@ function Welcome() {
           </p>
         </section>
 
-        <section className='w-[70%] mt-7'>
-          <p className='text-xl font-bold'>Pare de vender no escuro. </p>
-          <p className='text-xl'>Descubra exatamente de onde vêm suas vendas e aumente suas conversões com um sistema de rastreamento profissional.</p>
+        <section className='sm:w-[70%] mt-7'>
+          <p className='sm:text-left text-center text-xl font-bold'>Pare de vender no escuro. </p>
+          <p className='sm:text-left text-center text-xl'>Descubra exatamente de onde vêm suas vendas e aumente suas conversões com um sistema de rastreamento profissional.</p>
         </section>
 
-        <section className='w-[70%] mt-9'>
-          <button className='border-none rounded-xl bg-[#08B52D] text-base font-bold px-4 py-3'>QUERO AUMENTAR MINHAS CONVERSÕES</button>
+        <section className='sm:w-[70%] sm:mx-0 mt-9 mx-auto'>
+          <button onClick={() => setShowForm(true)} className='border-none rounded-xl bg-[#08B52D] text-base font-bold px-4 py-3 cursor-pointer'>QUERO AUMENTAR MINHAS CONVERSÕES</button>
         </section>
       </div>
 
-      <div className='col-span-2'>
+      <div className='hidden sm:block sm:col-span-2'>
         <span className='block font-[Classy_Vogue] text-[198px] text-[#813F1D]/25'>Jornada</span>
         <span className='block font-[Classy_Vogue] text-[198px] text-[#813F1D]/25'>Lucro</span>
       </div>
+
+      {showForm && (
+        <Form setShowForm={setShowForm} link={URL} />
+      )}
     </div>
   )
 }
