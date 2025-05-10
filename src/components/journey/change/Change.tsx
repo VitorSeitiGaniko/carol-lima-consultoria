@@ -1,18 +1,17 @@
-import React from 'react'
 import IconAffirmative from '../../../assets/iconAffirmative.svg';
 import IconNegative from '../../../assets/iconNegative.svg';
 
 const Change = () => {
   return (
-    <div className='bg-[#BB9E7E] w-screen flex flex-col items-center justify-center text-white py-12'>
+    <div className='lg:px-0 bg-[#BB9E7E] w-screen flex flex-col items-center justify-center text-white px-8 py-12'>
       <h2 className='flex flex-col items-center'>
-        <span className='font-[Classy_Vogue] text-4xl'>HOJE O CENÁRIO MUDOU</span>
-        <span className='text-3xl'>E ESTÁ CUSTANDO CARO...</span>
+        <span className='sm:text-left text-center font-[Classy_Vogue] text-4xl'>HOJE O CENÁRIO MUDOU</span>
+        <span className='sm:text-left text-center text-xl'>E ESTÁ CUSTANDO CARO...</span>
       </h2>
 
-      <hr className='border-t border-white w-[30%] my-4' />
+      <hr className='sm:w-[30%] border-t border-white my-4' />
 
-      <section className='grid grid-cols-[40px_1fr] border border-white rounded-xl w-[44%] py-8 px-4 mt-14'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] grid grid-cols-[40px_1fr] border border-white rounded-xl py-8 px-4 mt-14'>
         <i className=''>
           <img src={IconNegative} className='h-[24px] w-[24px]'/>
         </i>
@@ -23,7 +22,7 @@ const Change = () => {
         </div>
       </section>
 
-      <section className='grid grid-cols-[40px_1fr] border border-white rounded-xl w-[44%] py-8 px-4 mt-5'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] grid grid-cols-[40px_1fr] border border-white rounded-xl py-8 px-4 mt-5'>
         <i className=''>
           <img src={IconNegative} className='h-[24px] w-[24px]'/>
         </i>
@@ -34,7 +33,7 @@ const Change = () => {
         </div>
       </section>
 
-      <section className='grid grid-cols-[40px_1fr] border border-white rounded-xl w-[44%] py-8 px-4 mt-5'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] grid grid-cols-[40px_1fr] border border-white rounded-xl py-8 px-4 mt-5'>
         <i className=''>
           <img src={IconAffirmative} className='h-[24px] w-[24px]'/>
         </i>
@@ -46,10 +45,10 @@ const Change = () => {
       </section>
 
       <section className='mt-14'>
-        <p>O próprio Facebook atestou aumento de performance em quem implementa o básico da API de conversões:</p>
+        <p className='sm:text-center text-left'>O próprio Facebook atestou aumento de performance em quem implementa o básico da API de conversões:</p>
       </section>
 
-      <section className='grid grid-cols-2 gap-12 bg-[#1C2B33] border-none rounded-xl w-[44%] py-8 px-8 mt-8'>
+      <section className='sm:w-[70%] md:w-[70%] lg:w-[50%] grid grid-cols-2 gap-12 bg-[#1C2B33] border-none rounded-xl py-8 px-8 mt-8'>
       <div className='flex flex-col gap-4'>
           <p className='font-bold text-4xl'>13%</p>
           <p className='font-bold'>Menor custo por resultado</p>
